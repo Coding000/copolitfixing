@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookstore</title>
+    <style>
+        /* Styles for the bright background */
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+        /* Header styles */
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav button {
+            margin: 5px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        /* Book card styles */
+        .book-card {
+            display: flex;
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .book-image {
+            flex: 1;
+            max-width: 150px;
+            margin-right: 20px;
+        }
+        .book-details {
+            flex: 2;
+        }
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Bookstore</h1>
+        <nav>
+            <button>Contact</button>
+            <button>Categories</button>
+            <button>New Arrivals</button>
+        </nav>
+    </header>
+
+    <!-- Book cards -->
+    <article class="book-card">
+        <img src="book1.jpg" alt="Book Cover" class="book-image">
+        <div class="book-details">
+            <h2>The Great Novel</h2>
+            <p>By Jane Author</p>
+            <p>Genre: Fiction</p>
+            <p>Synopsis: A gripping tale of love and adventure.</p>
+        </div>
+    </article>
+    <!-- Add more book cards as needed -->
+
+    <footer>
+        © 2024 My Bookstore. All rights reserved.
+    </footer>
+
+    <!-- Customized form -->
+    <form id="contact-form">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <!-- Add more form fields (dropdowns, checkboxes, etc.) -->
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <!-- JavaScript (for form validation, etc.) -->
+    <script>
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Handle form submission here
+            // Validate inputs, send data to server, etc.
+        });
+    </script>
+</body>
+</html>
